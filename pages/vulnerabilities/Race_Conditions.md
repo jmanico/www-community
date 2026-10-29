@@ -25,7 +25,7 @@ causing multiple threads to interact with the same data simultaneously and produ
 The period during which a collision is possible is called the **race window**.
 
 Race conditions appear across multiple OWASP Top 10 2025 categories depending on context:
-- [A08:2025 – Software and Data Integrity Failures](https://owasp.org/Top10/2025/A08_2025-Software_and_Data_Integrity_Failures/) — most common; covers TOCTOU and concurrent state corruption
+- [A08:2025 – Software or Data Integrity Failures](https://owasp.org/Top10/2025/A08_2025-Software_or_Data_Integrity_Failures/) — most common; covers TOCTOU and concurrent state corruption
 - [A01:2025 – Broken Access Control](https://owasp.org/Top10/2025/A01_2025-Broken_Access_Control/) — when a race condition bypasses a permission or authentication check
 - [A06:2025 – Insecure Design](https://owasp.org/Top10/2025/A06_2025-Insecure_Design/) — when the architecture fundamentally lacks any synchronization strategy
 
@@ -460,7 +460,7 @@ python exploit_poc.py --target http://app:5000/login --threads 20 --expected-lim
 
 - [CWE-362: Concurrent Execution Using Shared Resource with Improper Synchronization](https://cwe.mitre.org/data/definitions/362.html)
 - [CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition](https://cwe.mitre.org/data/definitions/367.html)
-- [OWASP Top 10 2025 — A08 Software and Data Integrity Failures](https://owasp.org/Top10/2025/A08_2025-Software_and_Data_Integrity_Failures/)
+- [OWASP Top 10 2025 — A08 Software or Data Integrity Failures](https://owasp.org/Top10/2025/A08_2025-Software_or_Data_Integrity_Failures/)
 - [OWASP Top 10 2025 — A01 Broken Access Control](https://owasp.org/Top10/2025/A01_2025-Broken_Access_Control/)
 - [OWASP Top 10 2025 — A06 Insecure Design](https://owasp.org/Top10/2025/A06_2025-Insecure_Design/)
 - [OWASP Bangkok Chapter — The Race is On (2024)](https://owasp.org/www-chapter-bangkok/slides/2024/2024-07-05_The-Race-is-On.pdf)
